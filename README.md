@@ -1,5 +1,7 @@
 <img src='./public/inicioPNG.PNG' />
 
+aplicativo suspendido por caida de api.
+
 instalar dependencias
 instalar sweetalert 
 
