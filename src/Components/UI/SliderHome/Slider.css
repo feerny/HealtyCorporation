@@ -1,0 +1,279 @@
+.item {
+  padding: 1rem;
+}
+
+.item img {
+  /* height: 100%; */
+  width: 13.5rem;
+  pointer-events: none;
+}
+
+.slider {
+  display: flex;
+  cursor: grab;
+}
+
+.slider-container {
+  margin: 0 auto;
+  overflow-x: hidden;
+  height: 18rem;
+}
+
+.item-image {
+  border-radius: .7rem;
+  width: 10rem;
+}
+
+
+/*-------------- see ------------*/
+.all2 {
+  margin-top: -1em;
+  display: flex;
+  justify-content: center;
+}
+
+.text_send {
+  font-size: 1.5rem;
+}
+
+.text_send2 {
+  font-size: 1rem;
+  margin-top: .3rem;
+}
+
+.image-send {
+  height: 17rem;
+  min-width: 20rem;
+  padding: 1rem;
+}
+
+.img_edit {
+  height: 68%;
+  width: 80%;
+  margin-right: 2rem;
+  border-radius: .6rem;
+  margin-left: 2rem;
+}
+
+.img_edit2 {
+  width: 10%;
+  z-index: 1;
+  margin-left: 9rem;
+  margin-top: -3rem;
+}
+
+.link {
+  height: 14rem;
+}
+
+.link:hover {}
+
+.btn_send {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+
+  margin-bottom: -1rem;
+}
+
+.content_send {
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+.contentt {
+
+  /* display: flex; */
+  display: none;
+  flex-direction: row;
+  position: absolute;
+  z-index: 1;
+  background-color: #83c5eb;
+  border-radius: 18px;
+  font-family: sans-serif;
+  line-height: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  max-width: 70%;
+  padding: 40px 55px;
+  transition: all .3s ease;
+  border: solid #221007;
+
+
+}
+
+.off {
+  display: none;
+}
+
+.create {
+  margin-bottom: 1rem;
+  border-radius: .3rem;
+  border: none;
+  transition: all 300ms;
+  height: 3em;
+}
+
+#reser {
+  background-color: #5cf15c;
+}
+
+#reser:hover {
+  background-color: #eee7e7;
+  transition: all 300ms;
+  border: solid #221007;
+}
+
+#cancel {
+  background-color: #f15c5c;
+}
+
+#cancel:hover {
+  background-color: #eee7e7;
+  transition: all 300ms;
+  border: solid #221007;
+}
+
+#Send {
+  background-color: #a4dcff;
+}
+
+#Send:hover {
+  background-color: #eee7e7;
+  transition: all 300ms;
+  border: solid #221007;
+}
+
+#btn_create {
+  width: 12rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 15px #b3b3b3;
+  border-radius: 15px;
+  background-color: #eee7e7;
+  color: #ffff;
+}
+
+#btn_create:hover {
+  background-color: #eee7e7;
+
+  transition: all 300ms;
+  box-shadow: 0 0 15px #7e7e7e;
+}
+
+#car {
+  width: 34%;
+  margin-right: -300px;
+} 
+
+
+/* card dedsplegable */
+
+/* From uiverse.io by @joe-watson-sbf */
+/* From uiverse.io by @alexruix */
+.card {
+  width: 220px;
+  height: 254px;
+  border-radius: 1em;
+  padding: 1.9rem;
+  background: white;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 1px 20px rgba(43, 8, 37, 0.2);
+ }
+ 
+ .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  z-index: 2;
+  transition: 0.5s;
+ }
+ 
+ .card-info {
+  width: 13.4rem;
+  height: 100%;
+  position: relative;
+  margin-right: -1.8rem;
+  color:#83c5eb;
+  opacity: 0;
+  transform: translateY(10%);
+  transition: 0.5s;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center ;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 7rem;
+  padding-bottom: 8rem;
+  margin-top: -1.6rem;
+ }
+ 
+ /*Text*/
+ .text-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+ }
+ 
+ .text-body {
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  margin: 5px 0 15px 0;
+ }
+ 
+ /*Button*/
+ .card-button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  /* background: #ee9ca7; */
+  color:#83c5eb ;
+  font-weight: bold;
+  transition: 0.4s ease;
+  width: 6.5rem;
+ }
+ 
+ /*Image*/
+ .card-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  
+  /* background: #ee9ca7;
+  background: linear-gradient(to bottom, #e7aeae, #ee9ca7); */
+ }
+ 
+ /*Hover*/
+ .card:hover {
+  transform: translateY(0%);
+  
+ }
+ 
+ .card:hover:before {
+  opacity: 1;
+ }
+ 
+ .card:hover .card-info {
+  opacity: 1;
+  transform: translateY(0);
+ }
+ 
+ .card-button:hover {
+  background:#83c5eb;
+  color: #f5f5f5;
+ }
